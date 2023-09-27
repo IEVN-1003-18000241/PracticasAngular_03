@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3 row">
+            <label for="num1" class="col-sm-2 col-form-label">Número1</label>
+            <div class="col-sm-10">
+                <input name="num1" [(ngModel)]="num1" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="num2" class="col-sm-2 col-form-label">Número2</label>
+            <div class="col-sm-10">
+                <input name="num2" [(ngModel)]="num2" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" name="operacion" value="Suma" [(ngModel)]="operacion" type="radio" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Suma
+                </label>
+            </div><br>
+            <div class="form-check">
+                <input class="form-check-input" name="operacion" value="Resta" [(ngModel)]="operacion" type="radio" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Resta
+                </label>
+            </div><br>
+            <div class="form-check">
+                <input class="form-check-input" name="operacion" value="Multiplicacion" [(ngModel)]="operacion" type="radio" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Multiplicacion
+                </label>
+            </div><br>
+            <div class="form-check">
+                <input class="form-check-input" name="operacion" value="Division" [(ngModel)]="operacion" type="radio" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Division
+                </label>
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <button (click)="calcular()" class="btn btn-primary">Calcular</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>Resultado: {{resultado}}</h2>
+    </div>
+</div>
+
