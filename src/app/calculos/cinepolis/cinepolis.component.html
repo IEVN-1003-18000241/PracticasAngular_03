@@ -1,0 +1,38 @@
+<div class="component">
+    <div class="aviso">
+        <h2>Aviso</h2>
+        <p>No se pueden comprar más de 7 boletos por persona</p>
+        <p>El precio por boleto es de $12, puede obtener descuento con las sigiuentes condiciones</p>
+        <ul>
+            <li>Si compra mas de 5 boletos obtendra un 15% de descuento</li>
+            <li>Si compra 3, 4 o 5 boletos obtendra un 10% de descuento</li>
+            <li>Si compra 2 o menos boletos no obtendra descuento</li>
+            <li>Si paga con la tarjeta Cinefan obtendra un 10% de descuento adicional a los descuentos ya aplicados</li>
+        </ul>
+    </div>
+    <div class="entradas">
+        <h2>Entradas</h2>
+            <label for="nombree">Nombre</label>
+            <input matInput [(ngModel)]="nombre" name="nombree" type="text">
+            <label for="cantComprador">Cantidad de compradores</label>
+            <input matInput [(ngModel)]="cantComprad" name="cantComprador" type="text">
+            <label for="tarjetaCinefan">Tarjeta Cinefan</label>
+            <input matInput [(ngModel)]="tarjetaCineco" name="tarjetaCinefan" value="si" type="radio" id="radioSi">
+            <label for="radioSi">Si</label>
+            <input matInput [(ngModel)]="tarjetaCineco" name="tarjetaCinefan" value="no" type="radio" id="radioNo">
+            <label for="radioNo">No</label>
+            <label for="cantBolet">Cantidad de boletos</label>
+            <input matInput [(ngModel)]="cantBoletos" name="cantBolet" type="number">
+    </div>
+    <div class="salidas">
+        <h2>Salidas</h2>
+            <label for="valorPago">Total a pagar</label>
+            <input matInput type="text" name="valorPago" id="totalPagarIn" value="{{totalFinal}}">
+            <p>{{mensaje}}</p>
+    </div>
+    <div class="acciones">
+        <h2>Acciones</h2>
+        <button mat-raised-button color="primary" (click)="procesar()">Procesar</button>
+        <button mat-raised-button color="primary" (click)="salir()">Procesar</button>
+    </div>
+</div>
