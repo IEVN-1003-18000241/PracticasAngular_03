@@ -1,0 +1,66 @@
+.main-container{
+    background-image: url("https://www.roc21.com/blog/wp-content/uploads/2019/07/logo-cinepolis.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: aliceblue;
+    height: 100%;
+}
+
+.entradas{
+    width: 30%;
+    display: inline-block;
+    border: 3px;
+    border-color: aliceblue;
+    border-radius: 5px;
+}
+
+.salidas{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 250px;
+    border: 3px;
+    border-color: aliceblue;
+    border-radius: 5px;
+}
+
+.acciones{
+    border: 3px;
+    border-color: aliceblue;
+    border-radius: 5px;
+    margin: auto;
+    width: 30%;
+}
+
+.btnAccion{
+    margin: 0.5rem;
+}
+
+.inputStyle{
+    margin: auto;
+}
+
+.container{
+    padding: 10px;
+}
+
+p{
+    margin-right: 10px;
+}
+
+.tarjetaCinefan{
+    margin-left: 10px;
+}
+
+.inputStyle{
+    width: 95%;
+}
+
+#radioSi, #radioNo{
+    margin: 5px;
+}
+
+.totalPagarIn{
+    font-weight: bold;
+}
